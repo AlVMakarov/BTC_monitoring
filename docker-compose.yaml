@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  db: 
+    container_name: pgsql_db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=admin
+    image: postgres:12.20-alpine3.20
+
+  
