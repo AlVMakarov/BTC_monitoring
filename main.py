@@ -1,7 +1,7 @@
 import asyncio
 import aiohttp
 
-BINANCE_PRICE_URL = 'https://data-api.binance.vision/api/v3/ticker?symbols=["BTCUSDT","ETHBTC","SOLBTC"]&windowSize=5m'
+BINANCE_PRICE_URL = 'https://data-api.binance.vision/api/v3/ticker/24hr?symbols=["BTCUSDT","ETHBTC","SOLBTC"]'
 GATEIO_PRICE_URL = 'https://api.gateio.ws/api/v4/spot/tickers?currency_pair='
 GATEIO_CURRENCY_PAIRS = ['BTC_USDT','ETH_BTC','XMR_BTC','DOGE_BTC']
 HTTP_OK = 200
